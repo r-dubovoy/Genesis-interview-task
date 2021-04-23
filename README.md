@@ -9,12 +9,15 @@ You need to create an api which will have an image of a person's face as input, 
 # Prerequisites
 Based on [stylegan2](https://github.com/NVlabs/stylegan2) and [pix2pixHD](https://github.com/NVIDIA/pix2pixHD) repos. To use it, you must install their requirements.
 
+Download **[male](https://drive.google.com/file/d/1-6J1CYLsIysk38X9DNN23lIcnvOr8aYh/view)** and **[female](https://drive.google.com/file/d/1frJERJr0WM_R38LnSFQ6XjGQtcXnLco1/view)** weights and drop into **"model_checkpoints"** folder,
+
+
 # How to use
 If you have Windows you first need to enable GPU support for WSL2 explained [here](https://docs.nvidia.com/cuda/wsl-user-guide/index.html).
 
 If you have CUDA10 - build Docker image from Dockerfile.
 
-**If you have GPU series 3000 which only supports CUDA11 - build Docker image from Dockerfile-cuda11.** 
+If you have GPU series 3000 which only supports CUDA11 - build Docker image from Dockerfile-cuda11.
 
 ![how to use](https://i.ibb.co/gVLqFQK/Capture.png)
 
