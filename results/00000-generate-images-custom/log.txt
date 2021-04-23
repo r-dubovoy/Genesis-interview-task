@@ -1,0 +1,18 @@
+dnnlib: Running run_generator.generate_images_custom() on localhost...
+Loading networks from "gdrive:networks/stylegan2-ffhq-config-f.pk"...
+Traceback (most recent call last):
+  File "stylegan2/run_generator.py", line 357, in <module>
+    main()
+  File "stylegan2/run_generator.py", line 353, in main
+    dnnlib.submit_run(sc, func_name_map[subcmd], **kwargs)
+  File "C:\interview\stylegan2-distillation\stylegan2\dnnlib\submission\submit.py", line 343, in submit_run
+    return farm.submit(submit_config, host_run_dir)
+  File "C:\interview\stylegan2-distillation\stylegan2\dnnlib\submission\internal\local.py", line 22, in submit
+    return run_wrapper(submit_config)
+  File "C:\interview\stylegan2-distillation\stylegan2\dnnlib\submission\submit.py", line 280, in run_wrapper
+    run_func_obj(**submit_config.run_func_kwargs)
+  File "C:\interview\stylegan2-distillation\stylegan2\run_generator.py", line 73, in generate_images_custom
+    _G, _D, Gs = pretrained_networks.load_networks(network_pkl)
+  File "C:\interview\stylegan2-distillation\stylegan2\pretrained_networks.py", line 72, in load_networks
+    stream = open(path_or_url, 'rb')
+OSError: [Errno 22] Invalid argument: 'gdrive:networks/stylegan2-ffhq-config-f.pk'
